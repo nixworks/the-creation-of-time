@@ -377,7 +377,7 @@ error_syntax:	la	$a0, str_err_syntax
 		syscall
 		j 	prompt_loop
 
-# error_overflow:	la	$a0, str_err_overflow
+error_overflow:	la	$a0, str_err_overflow
 		li	$v0, 4
 		syscall
 		j 	prompt_loop
